@@ -7,7 +7,6 @@ navLinks.forEach(function(link) {
   });
 });
 
-
 function toggleDark() {
   document.body.classList.toggle("dark");
   var btn = document.getElementById("toggle-btn");
