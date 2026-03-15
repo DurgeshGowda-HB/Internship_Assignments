@@ -11,7 +11,7 @@ function TaskItem({ task, onDelete, onToggle }) {
         type="checkbox"
         checked={task.completed}
         onChange={() => onToggle(task.id)}
-      />
+      /> 
 
       {/* Task text - strikethrough if completed */}
       <span className={`task-text ${task.completed ? 'done' : ''}`}>

@@ -9,7 +9,7 @@ function TaskInput({ onAddTask }) {
     onAddTask(inputValue);
     setInputValue(''); // Clear input after adding
   }
-
+ 
   // Allow pressing Enter to add task
   function handleKeyDown(e) {
     if (e.key === 'Enter') {

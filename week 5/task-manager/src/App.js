@@ -7,7 +7,7 @@ import TaskList from './TaskList';
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  // Add a new task
+  // Add a new task 
   function handleAddTask(taskText) {
     const newTask = {
       id: Date.now(),
