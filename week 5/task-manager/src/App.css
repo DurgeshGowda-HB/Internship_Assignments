@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.task-counter {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.task-input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.task-input-area input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.task-input-area input:focus {
+  border-color: #3498db;
+}
+
+.task-input-area button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.task-input-area button:hover {
+  background-color: #2980b9;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  padding: 30px 0;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: background-color 0.2s;
+}
+
+.task-item.completed {
+  background-color: #eafaf1;
+  border-color: #a9dfbf;
+}
+
+.task-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  padding: 5px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
