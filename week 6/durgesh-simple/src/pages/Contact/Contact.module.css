@@ -1,0 +1,93 @@
+.page { min-height: 100vh; }
+.page.dark  { background: #1a1a2e; color: #e0e0e0; }
+.page.light { background: #f9f9f9; color: #222; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 50px 20px 60px; }
+
+.title { font-size: 2rem; font-weight: bold; color: #4a00e0; margin-bottom: 8px; }
+.sub { color: #aaa; margin-bottom: 36px; font-size: 0.95rem; }
+.page.light .sub { color: #555; }
+
+.grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; }
+
+/* Info */
+.info { display: flex; flex-direction: column; gap: 16px; }
+.info h3 { font-size: 1.1rem; font-weight: bold; margin-bottom: 4px; }
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  padding: 12px;
+  border: 1px solid #4a00e0;
+  border-radius: 8px;
+}
+.infoItem span { font-size: 1.2rem; }
+.label { font-size: 0.75rem; color: #4a00e0; font-weight: bold; margin-bottom: 2px; text-transform: uppercase; }
+.link { color: #4a00e0; font-size: 0.85rem; }
+.link:hover { text-decoration: underline; }
+
+/* Form */
+.form { display: flex; flex-direction: column; gap: 18px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 0.875rem; font-weight: bold; }
+
+.input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #4a00e0;
+  font-size: 0.9rem;
+  width: 100%;
+  resize: vertical;
+  transition: border 0.2s;
+}
+.input.dark  { background: #16213e; color: #e0e0e0; }
+.input.light { background: #fff; color: #222; }
+.input:focus { outline: none; border-color: #7c3aed; }
+.inputErr { border-color: #e74c3c !important; }
+
+.err { font-size: 0.8rem; color: #e74c3c; }
+
+.submitBtn {
+  background: #4a00e0;
+  color: white;
+  border: none;
+  padding: 11px 28px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  align-self: flex-start;
+  transition: opacity 0.2s;
+}
+.submitBtn:hover { opacity: 0.85; }
+
+/* Success */
+.success {
+  border: 1px solid #4a00e0;
+  border-radius: 8px;
+  padding: 40px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.success h3 { font-size: 1.3rem; }
+.success p  { color: #aaa; font-size: 0.9rem; }
+.success button {
+  border: 1px solid #4a00e0;
+  background: transparent;
+  color: #4a00e0;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.success button:hover { background: #4a00e0; color: white; }
+
+@media (max-width: 680px) {
+  .grid { grid-template-columns: 1fr; }
+}

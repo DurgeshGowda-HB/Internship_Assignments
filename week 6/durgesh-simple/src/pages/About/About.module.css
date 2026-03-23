@@ -1,0 +1,80 @@
+.page { min-height: 100vh; }
+.page.dark  { background: #1a1a2e; color: #e0e0e0; }
+.page.light { background: #f9f9f9; color: #222; }
+
+.container { max-width: 800px; margin: 0 auto; padding: 50px 20px 60px; }
+
+.title { font-size: 2rem; font-weight: bold; color: #4a00e0; margin-bottom: 24px; }
+.secTitle { font-size: 1.3rem; font-weight: bold; margin: 32px 0 16px; }
+
+/* Bio */
+.bio { display: flex; flex-direction: column; gap: 12px; margin-bottom: 8px; }
+.bio p { font-size: 0.95rem; line-height: 1.7; color: #aaa; }
+.page.light .bio p { color: #555; }
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Skills */
+.skillRow { margin-bottom: 14px; }
+.skillLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.skillLabel span:last-child { color: #4a00e0; font-weight: bold; }
+
+.bar {
+  height: 8px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.page.light .bar { background: #ddd; }
+
+.fill {
+  height: 100%;
+  background: #4a00e0;
+  border-radius: 4px;
+}
+
+/* Tabs */
+.tabs { display: flex; gap: 10px; margin: 28px 0 16px; }
+
+.tab {
+  padding: 8px 22px;
+  border-radius: 5px;
+  border: 1px solid #4a00e0;
+  background: transparent;
+  color: #4a00e0;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+.tab:hover { background: #4a00e0; color: white; }
+
+.tabActive {
+  padding: 8px 22px;
+  border-radius: 5px;
+  border: 1px solid #4a00e0;
+  background: #4a00e0;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Card */
+.card {
+  border: 1px solid #4a00e0;
+  border-radius: 8px;
+  padding: 20px;
+}
+.card h3 { font-size: 1rem; font-weight: bold; margin-bottom: 4px; }
+.sub { font-size: 0.85rem; color: #4a00e0; margin-bottom: 10px; }
+.card p { font-size: 0.9rem; color: #aaa; line-height: 1.6; }
+.page.light .card p { color: #555; }

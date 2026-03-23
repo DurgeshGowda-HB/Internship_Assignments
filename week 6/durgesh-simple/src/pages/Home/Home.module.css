@@ -1,0 +1,125 @@
+.page { min-height: 100vh; }
+.page.dark  { background: #1a1a2e; color: #e0e0e0; }
+.page.light { background: #f9f9f9; color: #222; }
+
+/* Hero */
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.heroText { flex: 1; }
+
+.hello { font-size: 1rem; color: #4a00e0; margin-bottom: 6px; }
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #4a00e0;
+  margin-bottom: 16px;
+}
+
+.bio {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+.page.light .bio { color: #555; }
+
+.btnGroup {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  background: #4a00e0;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+.btn:hover { opacity: 0.85; }
+
+.btnOutline {
+  border: 2px solid #4a00e0;
+  color: #4a00e0;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btnOutline:hover { background: #4a00e0; color: white; }
+
+.btnLink {
+  font-size: 0.85rem;
+  color: #888;
+  text-decoration: underline;
+  padding: 10px 0;
+}
+.btnLink:hover { color: #4a00e0; }
+
+/* Circle avatar */
+.heroImg { flex-shrink: 0; }
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #4a00e0;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skills */
+.skills {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.skills h3 {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  color: #4a00e0;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #4a00e0;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .hero { flex-direction: column; text-align: center; }
+  .heroImg { order: -1; }
+  .btnGroup { justify-content: center; }
+  .bio { margin: 0 auto 28px; }
+}

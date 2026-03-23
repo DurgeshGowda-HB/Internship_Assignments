@@ -1,0 +1,25 @@
+.footer {
+  text-align: center;
+  padding: 24px 20px;
+  border-top: 1px solid #4a00e0;
+  margin-top: 40px;
+}
+
+.footer.dark  { background: #16213e; color: #aaa; }
+.footer.light { background: #f0f0f0; color: #555; }
+
+.links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links a {
+  color: #4a00e0;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
